@@ -105,7 +105,9 @@ class Scanner {
                     addToken(SLASH);
                 }
                 break;
-            case ' ', '\r', '\t':
+            case ' ':
+            case '\r':
+            case '\t':
                 // Ignore whitespace.
                 break;
             case '\n':
